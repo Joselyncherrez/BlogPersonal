@@ -4,46 +4,57 @@
     <title>Joselyn Chérrez | Contacto</title>    
     <meta charset="UTF-8">
     <meta name="title" content="Contactar a Joselyn Chérrez">
-    <meta name="description" content="Datos y formulario de contacto">    
+    <meta name="description" content="Datos y formulario de contacto">  
+    <link rel="stylesheet" href="assets\css\bootstrap.min.css"  >  
+    <link rel="stylesheet" href="assets\css\estilos.css"  >
 </head>  
 
 <body>
     <header>
-        <h1>Contactar <a href=""></a> Joselyn Chérrez</h1>      
+        <h1>Contactar a Joselyn Chérrez</h1>      
     </header>  
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="estudios.html">Estudios</a>
-        <a href="portafolio.html">Portafolio</a>
-        <a href="pasatiempos.html">Pasatiempos</a>
-        <a href="#">Contactar</a>
+    <section class="wrapper">
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="estudios.html">Estudios</a></li>
+				<li><a href="portafolio.html">Portafolio</a></li>
+				<li><a href="pasatiempos.html">Pasatiempos</a></li>
+				<li><a href="#">Contactar</a></li>
+			</ul>
     </nav>
+    </section>
     <footer>
         <h1>Dirección de domicilio</h1>      
         <img src="assets\img\mapa.jpg" height="200px"/>
     </footer>
     <section>
-        <h2>Formulario de Contacto</h2>
+        <h2><br>Formulario de Contacto</h2>
         <form>
-            <h3> Si deseas, enviarme algun comentario sobre mi blog, puedes llenar el siguiente formulario.
-            </h3>
-        <input name="nombre" type="text" placeholder="Nombre" pattern="[a-zA-Z]{1,40}" required autofocus/>
+            <p> Si deseas, enviarme algun comentario sobre mi blog, puedes llenar el siguiente formulario.
+            </p>
+        <input name="nombre" type="text" placeholder="Nombre" pattern="[a-zA-Z]{1,40}" required autofocus style ="margin-left: 10px; margin-right: 10px;"/>
         <input name="telefono" type="text" placeholder="Telefono" pattern="[0-9]{10}" required />    
         <input name="edad" type="text" pattern="[0-9]{2}"  placeholder="Edad" required />
-        <p>
-            Comentarios:
-        </p>
-        <textarea name="g694-comentario" id="contact-form-comment-g694-comentario" class="textarea" required="" aria-required="true"></textarea>
-        <button id="enviar" name="enviar" type="submit">Enviar</button>
+        
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Comentarios:</label> 
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <button id="enviar" name="enviar" type="submit">Enviar</button>
+          </div>
+        
         </form>
         
     </section>
-    <h4>REDES SOCIALES</h4> <img src="assets\img\descarga.png" height="70px"/>
-    <footer>
-        <a href="https://www.facebook.com/joselyn.cherrez.940/"target="_blank" > Facebook</a>
-            <a href="https://www.instagram.com/selin.ch27/?hl=es"target="_blank">instagram</a>
-            <a href="https://twitter.com/Selin_2709"target="_blank">twitter</a>
-         </footer>
+    <section>
+        <h4>REDES SOCIALES</h4> 
+        <a title="Facebook" href="https://www.facebook.com/joselyn.cherrez.940/" target="_blank"><img src="assets\img\facebook_logo_icon_147291.png" height="50px" /></a>
+        <a title="Facebook" href="https://www.instagram.com/selin.ch27/?hl=es" target="_blank"><img src="assets\img\174855.png" height="50px" /></a>    
+        <a title="Facebook" href="https://twitter.com/Selin_2709" target="_blank"><img src="assets\img\2-27646_twitter-logo-png-transparent-background-logo-twitter-png.png" height="50px" /></a>  
+        
+    </section>
+   
+   
     <footer>
         <h4>Desarrollado por Joselyn Chérrez &copy; 2021</h4>
     </footer>
